@@ -8,7 +8,7 @@
 <body>
     <main>
         <section class="container">
-            <form id="login" method="post" class="container-form">
+            <form id="login" method="post" class="container-form" autocomplete="off">
                 <h1>Login</h1>
                 <div class="container-input">
                     <label for="email">Email</label>
@@ -21,15 +21,13 @@
                 <div>
                     <a href="register">Nao possui conta?</a>
                 </div>
-                <span style="display: none;" data-error>
-                    Credenciais invalidas
-                </span>
+                <span style="display: none;" data-error></span>
                 <button class="btn">
                     Enviar
                 </button>
             </form>
         </section>
     </main>
-    <script src="script.js"></script>
+    <script src="scripts/login.js"></script>
 </body>
 </html>

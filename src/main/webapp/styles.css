@@ -49,6 +49,8 @@ h5,
 h6 {
   text-transform: uppercase;
 }
+
+
 main {
   width: 100vw;
   height: 100vh;
@@ -171,4 +173,26 @@ main {
 
 .message-error {
   color: var(--red-500);
+}
+
+
+.container-profile  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+h1 strong {
+  font-size: 3rem;
+  color: var(--purple-300);
+}
+
+/* .container-profile h1 {
+  font-size: 3rem;
+} */
+
+.container-profile p {
+  font-size: 1.2rem;
+  color: var(--purple-100);
 }

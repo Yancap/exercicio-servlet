@@ -5,13 +5,16 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
     <main>
         <section class="container">
-            <h1>Bem vindo</h1>
+            <div class="container-profile">
+               <h1>Bem vindo <strong><c:out value='${items.get("name")}'/></strong></h1>
+                <p><c:out value='${items.get("email")}'/></p>
+            </div>
         </section>
     </main>
 </body>
