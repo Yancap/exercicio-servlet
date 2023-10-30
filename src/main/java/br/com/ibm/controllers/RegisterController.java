@@ -1,7 +1,5 @@
 package br.com.ibm.controllers;
 
-
-import br.com.ibm.dto.LoginRequestDTO;
 import br.com.ibm.dto.RegisterRequestDTO;
 import br.com.ibm.models.Database;
 import br.com.ibm.utils.ErrorFactory;
@@ -16,9 +14,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.stream.Collectors;
 
 @WebServlet(name = "RegisterController", urlPatterns = {"/register", "/register/"} )
@@ -34,7 +29,6 @@ public class RegisterController extends HttpServlet {
 
     out = response.getWriter();
     String stringJSON = request.getReader().lines().collect(Collectors.joining());
-    System.out.println(stringJSON);
     ObjectMapper mapper = new ObjectMapper();
     RegisterRequestDTO body = mapper.readValue(stringJSON, RegisterRequestDTO.class);
 

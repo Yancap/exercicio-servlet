@@ -31,7 +31,6 @@ async function handleSubmit(event) {
       this.querySelector("#email").style.outline = "1px solid #F5746C"
       this.querySelector("#password").style.outline = "1px solid #F5746C"
     }
-    console.log("Deu ruim");
     tagError.classList.add("message-error")
     tagError.setAttribute("style", "display: inline;")
     tagError.innerHTML = json.message

@@ -56,13 +56,11 @@ public class AuthController extends HttpServlet {
   @Override
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
           throws IOException, ServletException {
-    System.out.println("GET");
     String name = "";
     String email = "";
 
     var listOfCookies = Arrays.stream(request.getCookies()).toList();
     for(var cookie : listOfCookies) {
-      System.out.println(cookie.getValue());
       if(cookie.getName().equals("name")) {
         name = cookie.getValue().replaceAll("_", " ");
       } else if(cookie.getName().equals("email")) {
